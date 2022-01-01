@@ -1,0 +1,111 @@
+		var g_curCard = "selectedCard"; // initial displayed card
+		var g_cardContainer = null;
+		var g_cards = null;
+            var g_menu = null;
+		/*---------------------------- mobile view --------- */		
+		function mobilemenu(){
+				
+				$("#mobilemenucards").slideToggle();
+			}	
+		window.onresize=function()
+		{	
+			var w=window.innerWidth;
+			if (document.body.clientHeight)
+    			{
+        			w=document.body.clientHeight;//IE
+    			}
+			if(w > 480 ) {
+        			$("#mobilemenucards").removeAttr('style');
+        		}
+			mobilebodycolor();
+			
+		}
+		function mobilebodycolor()
+		{
+			var w=window.innerWidth;
+			if( w < 721 )
+			{
+				document.getElementById('mobilebackground').style.backgroundColor = mobileviewbackground;
+			}
+			else
+			{
+				$("#mobilebackground").removeAttr('style');
+
+			}
+		}
+
+		/*-----------------------mobile-end-------------- */
+
+
+		function confirmDefed(surl)
+		{
+		    if (confirm("<%=strDefederate%>"))
+		    {
+			  parent.location.href = surl;
+                }
+		}
+
+		function showhide1(divTab)
+		{
+		    var element1 = document.getElementById(divTab);	
+			
+		    if(element1.style.display == "none")
+		        element1.style.display = "block";
+		    else
+		        element1.style.display = "none";
+		}
+
+		function getElementposMenu( elementId, menuId )
+		{
+ 		    var x;
+ 		    var y;
+ 
+		    if (g_menu != null)
+		    {
+		        g_menu.style.display = "none";
+			  g_menu = null;
+		    }
+
+ 		    var elementA = document.getElementById( elementId );
+ 		    var elementB = document.getElementById( menuId );
+ 		    if ( elementA != null )
+ 		    {
+  		        x = elementA.offsetLeft;
+  			  y = elementA.offsetTop;
+			  elementB.style.left = x + 'px';
+			  elementB.style.top = y + 'px';
+
+			  // If this is last card in column
+			  if (elementA.offsetWidth + x > 400)
+			      elementB.style.left = (x - 100) + 'px';
+
+			  if (y + elementA.offsetHeight > g_cards.offsetHeight)
+				elementB.style.top = (g_cards.offsetHeight - (elementA.offsetHeight + 35)) + 'px';
+
+			  elementB.style.display = 'block';
+			  g_menu = elementB;
+ 		    }
+ 		    else
+ 		    {
+  		        return null;
+ 		    }
+		}
+
+            function showMenu(i,show)
+            {
+                if (!show)
+                     document.getElementById('optionmenu' + i).style.display='none';
+                else document.getElementById('optionmenu' + i).style.display='block';
+            }
+
+		function onloadhandler(val)
+		{
+		    g_cards = document.getElementById("cards");
+		    g_cardContainer = document.getElementById("cardcontainer");
+		    g_curCard = val;	
+		   
+			if (typeof mobilebodycolor == 'function') { 
+  			mobilebodycolor(); // function to color the body of mobile
+			} 
+		}	
+		

@@ -1,0 +1,66 @@
+body  { font-family: Arial, Helvetica, san-serif; }
+a { color: #0088ce; text-decoration: none; }
+.menuitem1 a:link {text-decoration: none;}
+.menuitem2 a:link {text-decoration: none; color: #808080;}
+.instructions  { color: #4e6d6f; font-size: 0.8em; }
+.head2dotline  { color: #154045; font-weight: normal; font-size: 1.2em; background-image: url(dotline_bg.gif); background-repeat: repeat-x; background-position: 0 bottom; letter-spacing: 0.1em; margin-top: 0.5em; padding-bottom: 5px; }
+.head3b   { color: #000; font-weight: bold; font-size: 1em; letter-spacing: 0.1em; margin-top: 0.4em; margin-bottom: 0.4em; border-bottom: 2px solid #4D8593; }
+.title1 { color: white; font-size: 1em; font-weight: bold; }
+.rulebelow  { padding-bottom: 5px; border-bottom: 2px solid #4D8593; }
+.rulebelowdotted { padding-bottom: 5px; border-bottom: 2px solid #4D8593; }
+.rulebelow2  { padding-bottom: 3px; border-bottom: 1px solid #babdb6; }
+.ruleabove   { padding-top: 5px; border-top: 2px solid #4D8593; }
+.tablehead1    { color: white; font-weight: bold; font-size: 0.95em; background-color: #4D8593; text-align: left; text-indent: 0.2em; padding: 0.2em; }
+.tablehead2  { color: black; font-weight: 600; font-size: 0.9em; line-height: 1.1em; background-color: #b1d1d6; text-align: left; text-indent: 0.5em; letter-spacing: 0.1em; }
+.tablehead1b { font-weight: bold; font-size: 1em; line-height: 1.1em; background-color: #b1d1d6; text-align: left; text-indent: 0.5em; }
+.navhead     { color: black; font-weight: bold; font-size: 0.85em; line-height: 0.9em; background-color: #cfcdc6; vertical-align: middle; padding: 4px; }
+.role1    { color: black; font-weight: bold; font-size: 0.75em; line-height: 0.85em; text-decoration: none; margin-top: 0.6em; }
+.section    { color: #4e6276; font-weight: bold; font-size: 0.8em; text-decoration: none; padding: 5px; background-color: #edeeec; text-align: center; }
+.menuitem1 {padding: 0.3em; margin-left: 0.5em;} 
+.menuitem2 {padding: 0.3em; margin-left: 0.5em;}
+.menubottom  { margin-bottom: 0; padding-bottom: 0; border-bottom: 5px solid #4D8593; }
+.message { font-size: 0.85em; background-color: #e8e887; margin-right: 1em; margin-bottom: 2em; padding: 1em; }
+.tab1s  { color: white; font-weight: bold; font-size: 12px; line-height: 17px; text-decoration: none; background-color: #4D8593; text-align: center; white-space: nowrap; }
+.tab2s { color: white; font-weight: bold; font-size: 11px; text-decoration: none; background-color: #4D8593; white-space: nowrap; }
+.tab2u { color: white; font-weight: normal; font-size: 11px; text-decoration: none; background-color: #4D8593; white-space: nowrap; }
+.buttons { text-align: center; margin-bottom: 0.4em; }
+.smalltext2   { color: #565656; font-size: 0.65em; line-height: 1em; text-decoration: none; margin-bottom: 1em; }
+
+		/* 2015 new look */
+		.head3b {
+			color: #434c50;
+			font-weight: normal;
+			font-size: 20px;
+			letter-spacing: 1px;
+			margin-top: 0;
+			margin-bottom: 5px;
+			border-bottom: 1px solid #dae1e1;
+			}
+		.instructions {
+			color: #808080;
+			font-size: 13px;
+			}
+		.table {
+			border: 1px solid #dae1e1;
+			}
+		.tablehead1 {
+			color: #434c50;
+			font-weight: noraml;
+			font-size: 15px;
+			background-color: #eef2f2;
+			text-align: left;
+			padding: 5px;
+			}
+		tr.tablecolumnhead td, .tablesubhead1 td {
+			color: #808080;
+			font-weight: normal;
+			font-size: 12px;
+			background-color: #eef2f2;
+			padding: 5px;
+			border-bottom: 0px;
+			}
+		tr.rule2 td {
+			font-size: 13px;
+			padding: 5px;
+			border-top: 1px solid #dae1e1;
+			}

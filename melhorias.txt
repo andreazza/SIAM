@@ -1,0 +1,9 @@
+1- Comentar todo o codigo
+2- Colocar uma lista simples nas sequencias, ou seja,
+eliminar o dado_atual, ou coisa assim
+3- Pelo menos 3 funções (exemplo: preenche_valor_quitado) estão com
+código repetido para garantir que o valor preenchido não tenha 3 casas
+decimais e dê problema. Refatora de modo a evitar a repetição de
+código
+4- Bot para cancelar guia
+5- Bot para alterar titular/destinatario

@@ -1,0 +1,13 @@
+ii|dv|vv2|iptu2|vv1|iptu1|amortiza_parcial
+3417513|3|28062,00|35,00|29249,00|36,00|8307,00
+
+LAUDO
+ii|dv|area_edificada
+3417513|3|30
+
+ii|dv|vv6|iptu6|vv5|iptu5|vv4|iptu4|vv3|iptu3|vv2|iptu2|vv1|iptu1|amortiza_parcial
+3417513|3|21407,00|0,00|23700,00|0,00|25259,00|0,00|26002,00|32,00|27006,00|33,00|29249,00|36,00|0,00
+
+SMF
+ii|dv|area_edificada
+3417513|3|330

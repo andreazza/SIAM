@@ -1,0 +1,6 @@
+# files to ignore
+
+*.png
+*.pdf
+*.html
+chromedriver
